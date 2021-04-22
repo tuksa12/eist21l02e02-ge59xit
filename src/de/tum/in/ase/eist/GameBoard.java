@@ -117,30 +117,30 @@ public class GameBoard {
 	 * Starts the game. Cars start to move and background music starts to play.
 	 */
 	public void startGame() {
-		// TODO Backlog Item 4: Start the game by setting running to true
-		// TODO Backlog Item 5: Call the method playMusic()
+		running = true;
+		playMusic();
 	}
 
 	/**
 	 * Stops the game. Cars stop moving and background music stops playing.
 	 */
 	public void stopGame() {
-		// TODO Backlog Item 4: Stop the game by setting running to false
-		// TODO Backlog Item 5: Call the method stopMusic()
+		running = false;
+		stopMusic();
 	}
 
 	/**
 	 * Starts the background music.
 	 */
 	public void playMusic() {
-		// TODO Backlog Item 5: Call the method playBackgroundMusic() on audioPlayer
+		audioPlayer.playBackgroundMusic();
 	}
 
 	/**
 	 * Stops the background music.
 	 */
 	public void stopMusic() {
-		// TODO Backlog Item 5: Call the method stopBackgroundMusic() on audioPlayer
+		audioPlayer.stopBackgroundMusic();
 	}
 
 	/**
